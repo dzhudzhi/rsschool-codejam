@@ -3,4 +3,4 @@ const sumOfOther = (arr) => {
     return arr.map(x => sum - x);
 }
 
-console.log(sumOfOther([2, 3, 4, 1]));
+module.exports = sumOfOther;
