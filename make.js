@@ -1,4 +1,4 @@
-const make = (...args) => {
+const make = (...argsTop) => {
   const arr = [];
   const func = (...args) => {
     if (typeof (args[0]) === 'function') {
@@ -10,7 +10,7 @@ const make = (...args) => {
     arr.push(...args);
     return func;
   };
-  return func(...args);
+  return func(...argsTop);
 };
 
 module.exports = make;
