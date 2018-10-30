@@ -9,7 +9,7 @@ const recursion = (tree) => {
       if (node.right) nextLevel.push(node.right);
     });
     res.push(thisLevel);
-    if (nextLevel.length !== 0) oneLevelNodes(...nextLevel); 
+    if (nextLevel.length !== 0) oneLevelNodes(...nextLevel);
   };
 
   oneLevelNodes(tree);
